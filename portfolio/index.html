@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karan Gupta - XR/VR Developer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       rel="stylesheet"
@@ -50,10 +50,11 @@
         <h1 class="hero-title">
           Hi, I'm <span class="highlight">Karan Gupta</span>
         </h1>
-        <h2 class="hero-subtitle">Full-Stack Developer</h2>
+        <h2 class="hero-subtitle">XR / Full-Stack Developer</h2>
         <p class="hero-description">
-          Focused developer, working on web / app development. Started coding in
-          the 8th grade and have been in love with it ever since.
+          Focused developer, working on games in the VR space and web / app
+          development. Started coding in the 8th grade and have been in love
+          with it ever since.
         </p>
         <div class="hero-buttons">
           <a href="#projects" class="btn-primary">View My Work</a>
@@ -92,23 +93,21 @@
         <div class="about-content">
           <div class="about-text">
             <p>
-              I'm a dedicated Full-Stack engineer and Founding Engineer with
-              extensive experience in React Native, Node.js, and web
-              technologies. Currently serving as Founding Engineer at BlackBox,
-              where I lead product development and have successfully onboarded 3
-              clients while reducing load times by 30%.
+              I'm a dedicated XR/VR developer and Full-Stack engineer with
+              extensive experience in Unity, React Native, and web technologies.
+              Currently working as a Unity XR Developer at Unproject, and
+              contributing as a Full-Stack Developer at BlackBox.
             </p>
             <p>
-              My expertise spans from full-stack mobile applications to
-              responsive web development. I've successfully launched several
-              Android apps on the Google Play Store, developed scalable backend
-              architectures, and created interactive UI animations for React
-              applications. I've also worked on hardware integration for data
-              collection and real-time inference systems.
+              My expertise spans from VR-based 3D design tools to full-stack
+              mobile applications. I've successfully launched apps on the Google
+              Play Store, developed AI-powered tools, and created immersive XR
+              experiences for various industries including agriculture and
+              spatial design.
             </p>
             <div class="about-stats">
               <div class="stat">
-                <h3>3+</h3>
+                <h3>4+</h3>
                 <p>Years Experience</p>
               </div>
               <div class="stat">
@@ -116,8 +115,12 @@
                 <p>Projects Completed</p>
               </div>
               <div class="stat">
-                <h3>5+</h3>
+                <h3>5</h3>
                 <p>Live Apps & Websites</p>
+              </div>
+              <div class="stat">
+                <h3>BCA</h3>
+                <p>Christ University</p>
               </div>
             </div>
           </div>
@@ -135,34 +138,25 @@
           <div class="skill-category">
             <h3>Programming Languages</h3>
             <div class="skill-list">
+              <span class="skill-item">C#</span>
               <span class="skill-item">JavaScript</span>
               <span class="skill-item">TypeScript</span>
               <span class="skill-item">C++</span>
-              <span class="skill-item">C#</span>
               <span class="skill-item">Java</span>
               <span class="skill-item">Python</span>
               <span class="skill-item">HTML/CSS</span>
-              <span class="skill-item">Kotlin</span>
             </div>
           </div>
           <div class="skill-category">
             <h3>Technologies & Frameworks</h3>
             <div class="skill-list">
+              <span class="skill-item">Unity (XR Toolkit)</span>
+              <span class="skill-item">Unreal Engine</span>
               <span class="skill-item">React Native</span>
               <span class="skill-item">Node.js</span>
               <span class="skill-item">React</span>
               <span class="skill-item">MongoDB</span>
-              <span class="skill-item">Nest.js</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h3>Development Tools</h3>
-            <div class="skill-list">
-              <span class="skill-item">Git & GitHub</span>
-              <span class="skill-item">Vite</span>
-              <span class="skill-item">Tailwind CSS</span>
-              <span class="skill-item">Google Play Console</span>
-              <span class="skill-item">MySQL</span>
+              <span class="skill-item">Express.js</span>
             </div>
           </div>
           <div class="skill-category">
@@ -174,6 +168,16 @@
               <span class="skill-item">Figma</span>
               <span class="skill-item">Ableton Live</span>
               <span class="skill-item">FL Studio</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Development Tools</h3>
+            <div class="skill-list">
+              <span class="skill-item">Git & GitHub</span>
+              <span class="skill-item">Vite</span>
+              <span class="skill-item">Tailwind CSS</span>
+              <span class="skill-item">Google Play Console</span>
+              <span class="skill-item">MySQL</span>
             </div>
           </div>
         </div>
@@ -201,37 +205,47 @@
         <div class="projects-grid">
           <div
             class="project-card professional current"
-            data-url="#blackbox-website"
+            data-url="#unproject-link"
           >
             <div class="project-image">
-              <img
-                src="assets/images/projects/Blackbox.png"
-                alt="BlackBox Development"
-                loading="lazy"
-              />
-              <div class="project-overlay">
+              <video
+                src="../assets/videos/Unproject.mp4"
+                poster="assets/images/projects/Unproject.png"
+                muted
+                loop
+                class="project-video"
+              >
+                <img
+                  src="../assets/images/projects/Unproject.png"
+                  alt="Unproject VR Design Tool"
+                  loading="lazy"
+                />
+              </video>
+              <div class="video-badge">
+                <i class="fas fa-play"></i>
+                <span>VIDEO</span>
+              </div>
+              <div class="project-overlay video-overlay">
                 <div class="overlay-content">
-                  <i class="fas fa-image"></i>
-                  <span>Click to View Image</span>
+                  <i class="fas fa-play-circle"></i>
+                  <span>Click to Watch Video</span>
                 </div>
               </div>
             </div>
             <div class="project-header">
-              <h3>BlackBox Development</h3>
+              <h3>Unproject - VR Design Tool</h3>
               <span class="project-type">Current Role</span>
             </div>
             <p class="project-description">
-              Founding Engineer leading product development and feature
-              implementation for flagship applications. Built responsive,
-              database-driven company website and scalable code architecture.
-              Successfully onboarded 3 clients and reduced load times by 30%,
-              enhancing user retention and satisfaction.
+              Unity XR Developer developing a VR-based 3D design tool. Built
+              modular menu systems for spawning and manipulating prefabs with XR
+              interaction using ray-based and direct object manipulation.
             </p>
             <div class="project-tags">
-              <span class="tag">Founding Engineer</span>
-              <span class="tag">Product Development</span>
-              <span class="tag">Full Stack</span>
-              <span class="tag">Current</span>
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">VR/XR</span>
+              <span class="tag">3D Design</span>
             </div>
           </div>
 
@@ -241,7 +255,7 @@
           >
             <div class="project-image">
               <img
-                src="assets/images/projects/Oneroot.png"
+                src="../assets/images/projects/Oneroot.png"
                 alt="Oneroot Android Apps"
                 loading="lazy"
               />
@@ -258,28 +272,23 @@
             </div>
             <p class="project-description">
               Created 2 Android apps from scratch - both live on Google Play
-              Store: "Market App" and "Farmer Market App". Developed backend
-              using Node.js and Express.js, implemented dashboards using React
-              and Vite, and assisted with hardware integration for data
-              collection and real-time inference.
+              Store. Built full-stack with React Native, Node.js, Express.js,
+              MongoDB and developed CV model for coconut detection.
             </p>
             <div class="project-tags">
               <span class="tag">React Native</span>
               <span class="tag">Node.js</span>
-              <span class="tag">Express.js</span>
-              <span class="tag">React & Vite</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">CV/AI</span>
               <span class="tag">2 Live Apps</span>
             </div>
           </div>
 
-          <div
-            class="project-card professional"
-            data-url="#hirebuddy-job-board"
-          >
+          <div class="project-card professional" data-url="#blackbox-website">
             <div class="project-image">
               <img
-                src="assets/images/projects/Hirebuddy.png"
-                alt="HireBuddy Job Board"
+                src="../assets/images/projects/Blackbox.png"
+                alt="BlackBox Development"
                 loading="lazy"
               />
               <div class="project-overlay">
@@ -290,28 +299,26 @@
               </div>
             </div>
             <div class="project-header">
-              <h3>HireBuddy Job Board</h3>
-              <span class="project-type">Full-Stack Web App</span>
+              <h3>BlackBox Development</h3>
+              <span class="project-type">Full-Stack Development</span>
             </div>
             <p class="project-description">
-              A modern, user-friendly job board web application with resume
-              parsing technology. Features real-time job listings, advanced
-              search and filtering capabilities, and seamless application
-              submission workflow with performance optimization and
-              accessibility focus.
+              Full-Stack Developer creating 3 Android apps and multiple
+              websites. Building responsive, database-driven solutions with
+              improved front-end interactivity and seamless user experiences.
             </p>
             <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">Node.js</span>
-              <span class="tag">Resume Parsing</span>
+              <span class="tag">3 Android Apps</span>
+              <span class="tag">Multiple Websites</span>
               <span class="tag">Full Stack</span>
+              <span class="tag">Current</span>
             </div>
           </div>
 
           <div class="project-card professional" data-url="#woo-plugin-wizard">
             <div class="project-image">
               <img
-                src="assets/images/projects/WooPlugin.png"
+                src="../assets/images/projects/WooPlugin.png"
                 alt="Woo Plugin Wizard"
                 loading="lazy"
               />
@@ -342,7 +349,7 @@
           <div class="project-card professional">
             <div class="project-image">
               <video
-                src="assets/videos/Drypto_animation.mp4"
+                src="../assets/videos/Drypto_animation.mp4"
                 poster=""
                 muted
                 loop
@@ -370,10 +377,9 @@
               <span class="project-type">Animation Specialist</span>
             </div>
             <p class="project-description">
-              Created interactive UI animations using Adobe After Effects for
-              React apps. Worked with frontend engineers to synchronize
-              animations with live product logic and maintained consistency
-              between design systems and development components.
+              Created interactive UI animations using Adobe After Effects
+              exported for React web apps. Synchronized animations with live
+              product logic and maintained design system consistency.
             </p>
             <div class="project-tags">
               <span class="tag">After Effects</span>
@@ -383,53 +389,10 @@
             </div>
           </div>
 
-          <div class="project-card professional" data-url="#unproject-link">
-            <div class="project-image">
-              <video
-                src="assets/videos/Unproject.mp4"
-                poster="assets/images/projects/Unproject.png"
-                muted
-                loop
-                class="project-video"
-              >
-                <img
-                  src="assets/images/projects/Unproject.png"
-                  alt="Unproject VR Design Tool"
-                  loading="lazy"
-                />
-              </video>
-              <div class="video-badge">
-                <i class="fas fa-play"></i>
-                <span>VIDEO</span>
-              </div>
-              <div class="project-overlay video-overlay">
-                <div class="overlay-content">
-                  <i class="fas fa-play-circle"></i>
-                  <span>Click to Watch Video</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-header">
-              <h3>Unproject - VR Design Tool</h3>
-              <span class="project-type">VR Development</span>
-            </div>
-            <p class="project-description">
-              Unity XR Developer developing a VR-based 3D design tool. Built
-              modular menu systems for spawning and manipulating prefabs with XR
-              interaction using ray-based and direct object manipulation.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Unity</span>
-              <span class="tag">C#</span>
-              <span class="tag">VR/XR</span>
-              <span class="tag">3D Design</span>
-            </div>
-          </div>
-
           <div class="project-card personal">
             <div class="project-image">
               <img
-                src="assets/images/projects/PracticeRange.png"
+                src="../assets/images/projects/PracticeRange.png"
                 alt="Practice Range VR"
                 loading="lazy"
               />
@@ -464,7 +427,7 @@
           <div class="project-card personal">
             <div class="project-image">
               <img
-                src="assets/images/projects/RunAcross.jpg"
+                src="../assets/images/projects/RunAcross.jpg"
                 alt="Run Across 3D Game"
                 loading="lazy"
               />
@@ -494,7 +457,7 @@
           <div class="project-card personal">
             <div class="project-image">
               <video
-                src="assets/videos/CarCrash.mp4"
+                src="../assets/videos/CarCrash.mp4"
                 poster=""
                 muted
                 loop
@@ -640,6 +603,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

@@ -437,78 +437,78 @@ document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
 const projectMedia = {
   "Unproject - VR Design Tool": [
     {
-      src: "assets/images/projects/Unproject.png",
+      src: "../assets/images/projects/Unproject.png",
       type: "image",
       name: "VR Design Tool Interface",
     },
     {
-      src: "assets/videos/Unproject.mp4",
+      src: "../assets/videos/Unproject.mp4",
       type: "video",
       name: "VR Design Demo",
     },
   ],
   "Oneroot Android Apps": [
     {
-      src: "assets/images/projects/Oneroot.png",
+      src: "../assets/images/projects/Oneroot.png",
       type: "image",
       name: "Android Apps Screenshot",
     },
   ],
   "BlackBox Development": [
     {
-      src: "assets/images/projects/Blackbox.png",
+      src: "../assets/images/projects/Blackbox.png",
       type: "image",
       name: "BlackBox Website",
     },
   ],
   "Woo Plugin Wizard": [
     {
-      src: "assets/images/projects/WooPlugin.png",
+      src: "../assets/images/projects/WooPlugin.png",
       type: "image",
       name: "Plugin Generator Interface",
     },
   ],
   "Drypto UI Animations": [
     {
-      src: "assets/videos/Drypto_animation.mp4",
+      src: "../assets/videos/Drypto_animation.mp4",
       type: "video",
       name: "UI Animation Demo",
     },
   ],
   "Practice Range VR": [
     {
-      src: "assets/images/projects/PracticeRange.png",
+      src: "../assets/images/projects/PracticeRange.png",
       type: "image",
       name: "Practice Range Screenshot",
     },
     {
-      src: "assets/videos/VR_GunReload.mp4",
+      src: "../assets/videos/VR_GunReload.mp4",
       type: "video",
       name: "Gun Reload Demo",
     },
     {
-      src: "assets/videos/VR_GunShoot.mp4",
+      src: "../assets/videos/VR_GunShoot.mp4",
       type: "video",
       name: "Gun Shooting Demo",
     },
   ],
   "Run Across": [
     {
-      src: "assets/images/projects/RunAcross.jpg",
+      src: "../assets/images/projects/RunAcross.jpg",
       type: "image",
       name: "3D Platformer Screenshot",
     },
   ],
   "Lost In The Woods": [
     {
-      src: "assets/videos/CarCrash.mp4",
+      src: "../assets/videos/CarCrash.mp4",
       type: "video",
       name: "Gaze Detection Demo",
     },
   ],
   "HireBuddy Job Board": [
     {
-      src: "assets/images/projects/Hirebuddy.png",
+      src: "../assets/images/projects/Hirebuddy.png",
       type: "image",
       name: "HireBuddy Job Board Interface",
     },

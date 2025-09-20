@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Handle /portfolio route
+RewriteRule ^portfolio/?$ portfolio/index.html [L]
+
+# Handle /portfolio/ with trailing slash
+RewriteRule ^portfolio/$ portfolio/index.html [L]
+
+# Handle any other /portfolio/ paths
+RewriteRule ^portfolio/(.*)$ portfolio/$1 [L]
+
+# Optional: Redirect root to portfolio
+# RewriteRule ^$ portfolio/index.html [L]
