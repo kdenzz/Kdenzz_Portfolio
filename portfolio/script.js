@@ -513,6 +513,13 @@ const projectMedia = {
       name: "HireBuddy Job Board Interface",
     },
   ],
+  "Sync Blocks": [
+    {
+      src: "../assets/images/projects/SyncBlocks.png",
+      type: "image",
+      name: "Sync Blocks Multiplayer Gameplay",
+    },
+  ],
 };
 
 let currentMediaIndex = 0;
@@ -536,6 +543,7 @@ const projectLinks = {
   "#blackbox-website": "https://blackbox-bixa.vercel.app",
   "#woo-plugin-wizard": "https://woocomerce-gemini.vercel.app",
   "#hirebuddy-job-board": "https://hirebuddy-job-board.vercel.app",
+  "#sync-blocks": "https://kdenzz.itch.io/syncblocks",
 };
 
 // Check if project card has video
@@ -670,7 +678,7 @@ document.querySelectorAll(".project-card").forEach((card) => {
     const actualUrl = projectLinks[url];
     const cardTitle = card.querySelector("h3").textContent;
 
-    if (actualUrl && actualUrl !== url) {
+    if (actualUrl) {
       window.open(actualUrl, "_blank");
     } else {
       alert(`${cardTitle}\n\nPreview unavailable. Please try again later.`);
