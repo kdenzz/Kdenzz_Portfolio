@@ -654,12 +654,38 @@ document.querySelectorAll(".project-card").forEach((card) => {
   const imageArea = card.querySelector(".project-image");
   if (imageArea) {
     imageArea.addEventListener("click", (e) => {
-      e.stopPropagation(); // Prevent card click
-
       const cardTitle = card.querySelector("h3").textContent;
+      const url = card.getAttribute("data-url");
+      const actualUrl = projectLinks[url];
 
-      // Use unified media viewer for all projects
-      openMediaViewer(cardTitle, 0);
+      console.log(
+        "Image clicked:",
+        cardTitle,
+        "URL:",
+        url,
+        "Actual URL:",
+        actualUrl
+      );
+
+      // For specific projects with external links, open the website instead of media viewer
+      if (
+        cardTitle === "Sync Blocks" ||
+        cardTitle === "HireBuddy Job Board" ||
+        cardTitle === "Woo Plugin Wizard"
+      ) {
+        console.log("Opening external link for:", cardTitle, "URL:", actualUrl);
+        e.stopPropagation(); // Prevent card click
+        if (actualUrl) {
+          window.open(actualUrl, "_blank");
+        } else {
+          console.error("No URL found for:", cardTitle);
+        }
+      } else {
+        console.log("Opening media viewer for:", cardTitle);
+        e.stopPropagation(); // Prevent card click
+        // Use unified media viewer for other projects
+        openMediaViewer(cardTitle, 0);
+      }
     });
   }
 
@@ -678,7 +704,7 @@ document.querySelectorAll(".project-card").forEach((card) => {
     const actualUrl = projectLinks[url];
     const cardTitle = card.querySelector("h3").textContent;
 
-    if (actualUrl) {
+    if (actualUrl && actualUrl !== url) {
       window.open(actualUrl, "_blank");
     } else {
       alert(`${cardTitle}\n\nPreview unavailable. Please try again later.`);
